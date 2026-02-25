@@ -5,6 +5,8 @@ import java.util.Objects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.tmb.constants.FrameworkConstants;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Driver {
@@ -15,10 +17,14 @@ public class Driver {
 		{
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-			driver.get("https://google.com");
+			driver.get(FrameworkConstants.getUrl());
 			
 		}
 		
+	}
+	public static WebDriver getDriver()
+	{
+		return driver;
 	}
 	public static void quitDriver()
 	{

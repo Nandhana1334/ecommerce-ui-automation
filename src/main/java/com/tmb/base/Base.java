@@ -1,13 +1,13 @@
-package com.tmb.tests;
+package com.tmb.base;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.tmb.driver.Driver;
 
-public class BaseTest {
+public class Base {
 
-	protected BaseTest()
+	protected Base()
 	{
 		
 	}
